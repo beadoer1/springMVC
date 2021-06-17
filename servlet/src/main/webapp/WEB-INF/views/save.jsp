@@ -1,0 +1,21 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+성공
+<ul>
+<%--    아래와 같이 getAttribute() 를 통해 불러오는 것도 가능  --%>
+<%--    <li>id=<%= ((Member)request.getAttribute("member")).getId()%></li>  --%>
+<%--    <li>username=<%= ((Member)request.getAttribute("member")).getUsername()%></li>  --%>
+<%--    <li>age=<%= ((Member)request.getAttribute("member")).getAge()%></li>  --%>
+
+    <li>id=${member.id}</li>
+    <li>username=${member.username}</li>
+    <li>age=${member.age}</li>
+</ul>
+<a href="/index.html">메인</a>
+</body>
+</html>
+
