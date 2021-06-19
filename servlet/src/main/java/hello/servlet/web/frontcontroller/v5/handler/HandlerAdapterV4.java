@@ -3,7 +3,6 @@ package hello.servlet.web.frontcontroller.v5.handler;
 import hello.servlet.web.frontcontroller.ModelView;
 import hello.servlet.web.frontcontroller.v4.ControllerV4;
 import hello.servlet.web.frontcontroller.v5.MyHandlerAdapter;
-import org.springframework.ui.Model;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,7 +11,7 @@ import java.util.Map;
 
 public class HandlerAdapterV4 implements MyHandlerAdapter {
     @Override
-    public boolean suports(Object handler) {
+    public boolean supports(Object handler) {
         return (handler instanceof ControllerV4);
     }
 

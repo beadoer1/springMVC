@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public interface MyHandlerAdapter {
 
-    boolean suports(Object handler);
+    boolean supports(Object handler);
 
     ModelView handle(HttpServletRequest request, HttpServletResponse response, Object handler);
 }

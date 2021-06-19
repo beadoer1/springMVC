@@ -72,9 +72,9 @@ public class FrontControllerServletV5 extends HttpServlet {
         return handler;
     }
 
-    private MyHandlerAdapter getHandlerAdapter(Object handler) {
+    private MyHandlerAdapter getHandlerAdapter(Object handler) { // Adapter 의 keypoint 같다.
         for (MyHandlerAdapter handlerAdapter : handlerAdapters) {
-            if (handlerAdapter.suports(handler)) {
+            if (handlerAdapter.supports(handler)) {
                 return handlerAdapter;
             }
         }
