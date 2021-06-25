@@ -62,8 +62,6 @@ public class FrontControllerServletV5 extends HttpServlet {
 
         MyView myView = viewResolver(modelView.getViewPath());
         myView.render(modelView.getModel(), request, response);
-
-
     }
 
     private Object getHandler(HttpServletRequest request) {
